@@ -4,7 +4,6 @@ const VideoCard = ({info}) => {
   const {snippet,statistics}=info
   const {thumbnails,title,channelTitle}=snippet
   const {viewCount}=statistics
-  console.log(title)
   return (
     <div className='shadow-lg p-2 m-2 w-72'>
       <img className='rounded-lg' src={thumbnails.medium.url} alt="thumbnail" />

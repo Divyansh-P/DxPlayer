@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { YT_API_KEY } from '../utils/const'
+import { Home_Video } from '../utils/const'
 import VideoCard from './VideoCard'
+import { Link } from 'react-router-dom'
 const Videocontainer = () => {
   const getvideo=async ()=>{
-  const data=await fetch(YT_API_KEY)
+  const data=await fetch(Home_Video)
   const json=await data.json()
   setvideos(json.items)
   }
@@ -15,7 +16,9 @@ const Videocontainer = () => {
   return (
     <div className='flex flex-wrap justify-evenly'>
    {videos.map((video)=>(
-    <VideoCard key={video.id} info={video}/>
+    <Link key={video.id} to={"/watch?v="+video.id}>
+    <VideoCard  info={video}/>
+    </Link>
    ))
   }
    
