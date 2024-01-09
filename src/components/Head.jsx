@@ -4,6 +4,7 @@ import { togglemenu } from '../utils/appslice'
 import { Autocomplete_API,Options } from '../utils/const'
 import { cacheResults } from '../utils/searchslice'
 import { Link } from 'react-router-dom'
+import p1 from '../assets/p1.png'
 
 const Head = () => {
    const [autosuggest,setautosuggest]=useState('')
@@ -37,7 +38,7 @@ useEffect(()=>{
   else{
     getSuggestions()
   }
-}, 1000); 
+}, 500); 
 return ()=>{
   clearTimeout(timer)
 }
@@ -45,9 +46,9 @@ return ()=>{
 
 
   return (
-    <div className='grid grid-flow-col p-5 m-2 bg-white sm:sticky sm:top-0 '>
+    <div className='grid grid-flow-col sm:p-5 m-2 bg-white sm:sticky sm:top-0 '>
       <div className='flex col-span-2'> <img className='h-6 sm:h-8 cursor-pointer' src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp" alt="menu" onClick={togglemenuhandler} />
-    <img className='h-8 mx-8' src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="logo"  />
+    <img className='h-8 sm:h-10 mx-8' src={p1} alt="logo"  />
     </div>
     <div className='col-span-9 px-10' >
     <div  >

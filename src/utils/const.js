@@ -3,18 +3,18 @@ import { MdOutlinePets, MdOutlineSportsBasketball } from "react-icons/md";
 import {GiDramaMasks} from "react-icons/gi"
 import {FcBiotech} from 'react-icons/fc'
 
-export const Home_Video="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+import.meta.env.VITE_RAPI
+export const Home_Video="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="+import.meta.env.VITE_YTAPI_KEY
 
-export const Video_Info="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key="+import.meta.env.VITE_RAPI+"&id="
+export const Video_Info="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key="+import.meta.env.VITE_YTAPI_KEY+"&id="
 
 export const Autocomplete_API="https://youtube-data8.p.rapidapi.com/auto-complete/?gl=IN&q="
 
-export const Searchinfo_API="https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key="+import.meta.env.VITE_RAPI+"&q="
+export const Searchinfo_API="https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key="+import.meta.env.VITE_YTAPI_KEY+"&q="
 
 export const RelatedVideo_API='https://youtube-data8.p.rapidapi.com/video/related-contents/?gl=IN&id='
 
 export const Options= {headers:{
-    'X-RapidAPI-Key': import.meta.env.VITE_AUTOSUGGESTAPI,
+    'X-RapidAPI-Key': import.meta.env.VITE_AUTOSUGGESTAPI_KEY,
     'X-RapidAPI-Host': 'youtube-data8.p.rapidapi.com'
 }
 }

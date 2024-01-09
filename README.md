@@ -1,8 +1,50 @@
-# React + Vite
+<h1 align="center">
+  <br>
+  <a href="https://devfrom.netlify.app"><img src="./ss/p2.png" alt="DEV.to Clone" width="200"></a>
+  <br>
+  <br>
+  <b>DX Player</b>
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An Online Video Player created with React and Youtube API
 
-Currently, two official plugins are available:
+![](ss/p1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to setup locally
+
+### Clone
+
+Clone the repo to your local machine using `https://github.com/Divyansh-P/DxPlayer`
+
+### Setup
+
+Install npm dependencies
+
+```js
+ npm install
+```
+
+Create a `.env` file
+
+Set up the following environment variables
+
+```js
+VITE_YTAPI_KEY // From Youtube 
+VITE_AUTOSUGGESTAPI_KEY // From Rapidapi Youtubedata API
+```
+Finally, run <code>npm start</code>
+
+## Screenshots
+
+### Videos based on specific categories
+
+![](ss/g1.gif)
+
+### Search functionality with autosuggestions
+
+![](ss/g2.gif)
+
+### Watch video with realated video suggestions
+
+![](ss/g3.gif)
