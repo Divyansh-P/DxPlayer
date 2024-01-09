@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://devfrom.netlify.app"><img src="./ss/p2.png" alt="DEV.to Clone" width="200"></a>
+  <a href="https://dxplayer.netlify.app/"><img src="./ss/p2.png" alt="Dxplayer" width="200"></a>
   <br>
   <br>
   <b>DX Player</b>
